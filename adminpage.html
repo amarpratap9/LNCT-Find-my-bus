@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lnct Home</title>
+    <link rel="stylesheet" href="adminpagestyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=lnct+bhopal|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="avatar.png" alt="LNCT Logo">
+        </div>
+        <ul>
+            <li class="item"><a href="http://localhost//findmybus/index.html#Home">Home</a></li>
+            <li class="item"><a href="http://localhost//findmybus/admin.html">Log Out</a></li>
+            <li class="item"><a href="#Setting">Setting</a></li>
+            <li class="item"><a href="https://www.tidio.com/panel/inbox/conversations/ec4458009e264be2bd4e15c5d82d8322?stream=unassigned">Chat with user</a></li>
+        </ul>
+    </nav>
+
+    <section id="Admin">
+        <h1 class="h-primary">LNCT : Find My Bus </h1>
+        <div class="glowing-circle"></div>
+        <div class="routes">
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                <div class="routez"> 
+                <h2>Select Your Time Slot :</h2>
+                <select name="Slot" id="Slot">
+                  <option value="Slot1">3:30PM</option>
+                  <option value="Slot2">5:30PM</option>
+                </select><br>
+                <input type="date" name="date" id="date" placeholder="Select date">
+        <h3>Upload Bus Route :</h3>
+        <input type="file" id="myfile" name="myfile" /><br><br>
+        <input type="submit"  name="submit" value="Submit" /><br>
+    </form>  
+</div>
+</div>
+    </section>
+     <a href='https://docs.google.com/spreadsheets/d/1uLOuK8vfU2zpj6ug5KvLaYArOI6RRUkdVxQokp_D2Og/edit?usp=sharing'>
+        <button class="btn">UPLOAD BY GOOGLE SHEET</button>
+    <section id="tablee">
+        <div class="table">
+        <form action="https://docs.google.com/spreadsheets/d/1uLOuK8vfU2zpj6ug5KvLaYArOI6RRUkdVxQokp_D2Og/edit?usp=sharing">
+        <table>
+            <tr>
+                <th>Route Number</th>
+                <th>Stop</th>
+                <th>Bus Number</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Khanugaon,Lalghati,Koh E Fiza,Paripark,Shajanabad Pani Tankoi<br>
+                    Taj Mahal,Royal Market,Peer Gate,Moti Masjid,Kamla Park,Polytechniq,Link Road No.1</td>
+                <td><input type="text" name="Khanugaon" id="R1" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Danish,Akrit Eco Coity,Idus,Rohit Nager,Trilanga,Aura Mall,Shivay Complex,1100 Quarters</td>
+                <td><input type="text" mame="Danish" id="R2" placeholder="Enter Bus Number"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Baaghsewaniya Police station,Raja bhoj, Center Plaza,Mount Carmel,Rameshwaram,Global park,Spring Valley,Singnature 360</td>
+                <td><input type="text" name="Baaghsewaniya" id="R3" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Amrai,Bda,Sagar Public School,Barkheda pathani,Vijay market,Adhaarshila,Rishipuram</td>
+                <td><input type="text" name="Amrai" id="R4" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Railway Colony,Shakti Nagar Complex,Panchvati,Gulab Garden,Higher Secondary Square</td>
+                <td><input type="text" name="Railway" id="R5" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Vidya Sagar College,Awadhpuri Chouraha,Sos,Gopal Nagar</td>
+                <td><input type="text" name="Vidya" id="R6" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Dana Pani,12 no.,Sai Board,11 No., 10.1/2,Fracture Hospital,Habibganj Naka,Narmada Hospital,Pragati Petrol Pump</td>
+                <td><input type="text" name="Dana" id="R7" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Joyti Talkies,Chetak Bridge</td>
+                <td><input type="text" name="Joyti" id="R8" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Neelbad,Bhadbahad,Police Line,Depo,Jawahar Chowk,Rangmahal Chouraha,Teen Shed,Mata Mandir,St Mary,% No Dudh Dairy, 6 No,Board Office</td>
+                <td><input type="text" name="Neelbad" id="R9" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Geetanjali Complex,Pnt,Nehru Nagar,Kamla Nagar Thana,Vaishali Nagar,Manit</td>
+                <td><input type="text" name="Geetanjali" id="R10" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>New Sabja Mandi,Ganesh Nagar,Foota Maqbara,Bus Stand, Alpana,Sangam Talkies,Jaishree Hostel,Bajariya Police Station,Pushpa Nagar</td>
+                <td><input type="text" name="New" id="R11" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Dig,Sindhi Colony,Bhopal Talkies,Lady Hospital,Lily Takies,Zinci,Prabhat</td>
+                <td><input type="text" name="Dig" id="R12" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Coach Factory,Dwarka Nagaer,Railway Station,Habibia School,Pushpa Nagar</td>
+                <td><input type="text" name="Coach" id="R13" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Famous Hotel,Ashoka Garden Thana,Dussera Maidan,Gopi Hotel,Prabhat</td>
+                <td><input type="text" name="Famous" id="R14" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Bharat Talkies,Barkhedi,Capital Petrol Pump,Prabhat,Apsara,Bijli Gate</td>
+                <td><input type="text" name="Bharat" id="R15" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Bima Hospital</td>
+                <td><input type="text" name="Bima" id="R16" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Piplani</td>
+                <td><input type="text" name="Piplani" id="R17" placeholder="Enter Bus number"></td>
+            </tr>
+                <td>18</td>
+                <td>New Minal,J.K. Road,Sankriti Hostel</td>
+                <td><input type="text" name="Minal" id="R18" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+            <td>19</td>
+            <td>Shravankanta,Tea Point(nizamuddin),Bharat Nagar</td>
+            <td><input type="text" name="Shravankanta" id="R19" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Bhartiya Niketan,Gautam Nagar,Rachna Nagar,Subhas Nagar Fatak,Prabhat</td>
+                <td><input type="text" name="Bhartiya' id="R20" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Ayodhya Nagar,Narela Jod,Rajiv Nagar,Tanatan Dhaba</td>
+                <td><input type="text" name="Ayodhya" id="R21" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Prakash Nagar,Sabji Mandhi</td>
+                <td><input type="text" name="Prakash" id="R22" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Ayappa Mandir,Gandhiu Nagar,Asharam Bapu Chouraha,Karound,Peoples Hospital,Bhanpur,Sagar Estate</td>
+                <td><input type="text" name="Ayappa" id="R23" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Anand Nagar</td>
+                <td><input type="text" name="Ananad" id="R24" placeholder="Enter Bus number"></td>
+            </tr>
+                <td>25</td>
+                <td>Sehore Bus Stamnd,Bairagarh,Lalghati,Panchvati,Data Colony,Asharam Bapu Chouraha,Ragiv Gandhi,Karond</td>
+                <td><input type="text" name="Sehore" id="R25" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Nayapura Kolar Road,Banjari,Bimakunj,Bimakunj,Shalimar,Bansal Hospital,Manisha,Shaitan Singh Chouraha,1100 Quarters,E-7, 7No,Parul Hospital,Board Office Chouraha</td>
+                <td><input type="text" name="Nayapura" id="R26" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Sarvdharam,Kali Mata Mandir(Chunabha),Suyash Hospital,PetrolPump,Kolar Guest House,Akshay Hospital,Char Imli Tiraha</td>
+                <td><input type="text" name="Sarvdharam" id="R27" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Obedullah Ganj,Madideep,Samardha,11 Mile, Misrod,Vidya Nagar,Bagh Sevaniya</td>
+                <td><input type="text" name="Obedullah" id="R28" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Vidisha City Center,Raisen</td>
+                <td><input type="text" name="Vidisha" id="R29" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>J.K. Hospital,Bima Kunj,Bansal Hospital,Manisha Market,Basnskhedi</td>
+                <td><input type="text" name="Hospital" id="R30" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Kalpana Nagar</td>
+                <td><input type="text" name="Kalpana" id="R30" placeholder="Enter Bus number"></td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Sidhrtha Lake,Patel Nagar</td>
+                <td><input type="text" name="Sidhrtha" id="R30" placeholder="Enter Bus number"></td>
+            </tr>
+            <input type="submit" name="submit" value="Submit">
+            <input type="date" name="date" id="date" placeholder="Select date">
+        </table>
+        
+    </div>
+        </form>
+    </section>
+    <!-- <a href='https://docs.google.com/spreadsheets/d/1uLOuK8vfU2zpj6ug5KvLaYArOI6RRUkdVxQokp_D2Og/edit?usp=sharing'>
+        <button class="btn">UPLOAD BY GOOGLE SHEET</button> -->
+    <footer>
+        <div class="center">
+           <P> See Any Rash Draving Contact -- 7945xxxxx<br></P>
+            This Web App is Created By Deepak, Amar and Ayushman
+        </div>
+    </footer>
+
+ 
+</body>
+
+</html>

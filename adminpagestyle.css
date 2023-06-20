@@ -1,0 +1,304 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(40, 10, 47);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#avatar{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 4px 8px;
+    border-radius: 50%;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'lnct bhopal',cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#Admin{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+/* .avatar{
+    width: 430px;
+    height: 430px;
+    border-radius: 150%;
+    position: absolute;
+    top: 200px;
+    transform : translate(55%,-15%);
+    
+        
+
+   
+} */
+
+.glowing-circle {
+    width: 430px;
+    height: 430px;
+    border-radius: 150%;
+    transform : translate(55%,-15%);
+    position: absolute;
+    top: 200px;
+    background: url('image1.jpeg')no-repeat center center/cover;
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+  }
+    @-webkit-keyframes glowing {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
+#Admin::before{ 
+    content: "";
+    position: absolute;
+    background: url('Adminw.jpg') no-repeat center center/cover;
+    height: 780px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+
+#Admin h1{
+    color:rgb(79, 12, 75);
+    text-align: left;
+    font-size: 4.2rem;
+    font-family: 'Bree Serif', serif;
+    transform : translate(-45%,-50%);
+   
+}
+
+
+#Admin select {
+    width: 60%;
+   
+    border: 50px ;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+   
+    
+    background-color: whitesmoke;
+    background-image: linear-gradient(to top, #30052d, rgba(84, 31, 92, 0.725) 33%);
+    transform : translate(-165%,-40%);
+  }
+
+
+#Admin h2{
+    color:rgb(79, 12, 75);
+    font-size: 2.2rem;
+    font-family: 'Bree Serif', serif;
+    transform : translate(-100%, -80%);
+   
+}
+
+#Admin h3{
+    color:rgb(79, 12, 75);
+    font-size: 2.2rem;
+    font-family: 'Bree Serif', serif;
+    transform : translate(-100%, 10%);
+   
+}
+
+
+#Admin input[type="file"]
+{
+    width: 60%;
+   
+    border: 50px ;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+   
+    
+    background-color: whitesmoke;
+    background-image: linear-gradient(to top, #30052d, rgba(84, 31, 92, 0.725) 33%);
+    transform : translate(-150%, 60%);
+}
+
+
+
+#Admin input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 120px;
+    background: #6608e0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transform : translate(-270%,150%);
+}
+#Admin input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #67d163;
+    color: #000;
+}
+
+table, th, td {
+    background-color: rgba(163, 18, 182, 0.055);
+    border: 1px solid rgb(8, 8, 8);
+    border-collapse: collapse;
+  }
+th, td {
+ padding: 15px;
+}
+table{
+    transform: translate(0%, 10%);
+}
+#table9 table7
+{   
+    transform: translate(100%, 100%);
+    cursor: pointer;
+    background: #184a86;
+    color: #000;
+} 
+#tablee table{
+    table-layout: auto;
+    height: 1500px;
+}
+
+.table input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    background:rgb(93, 13, 89);;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 20px;
+    transform: translate(250%, 4900%);
+}
+.table input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+
+#tablee input[type="date"]
+{
+  width: 20%;
+  border: 50px ;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  
+  background-color: rgb(245, 245, 245);
+  background-image: linear-gradient(to top, #30052d, rgba(84, 31, 92, 0.725) 33%);
+  transform : translate(-70%,500%);
+}
+
+
+
+
+footer{
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 40px 20px;
+    transform : translate(0%, 250%);
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+} 

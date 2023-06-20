@@ -1,0 +1,348 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(40, 10, 47);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#avatar{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 4px 8px;
+    border-radius: 50%;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'lnct bhopal',cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: calc(50% - 50px);
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('bk.jpg') no-repeat center center/cover;
+    height: 780px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:rgb(255, 245, 245);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#home button
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #6608e0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+#home button:hover
+{
+    cursor: pointer;
+    background: #67d163;
+    color: #000;
+}
+
+/* Sign up Section */
+ 
+#Sign-up ::placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+#Sign-up h1{
+    color: rgb(0, 0, 0);
+    transform: translate(0%,125%);
+    
+}
+
+
+
+.login-box{
+    width: 360px;
+    height: 600px;
+    background: rgba(58, 18, 72, 0.651);
+    color: rgb(255, 255, 255);
+    margin: auto;
+    align-items: auto;
+    box-sizing: border-box;
+    padding: 110px 74px;
+    font-size: 20px;
+    transform: translate(0%,4%);
+}
+
+.login-box p{
+    margin: 2px;
+    padding: 0;
+    font-weight: bold;
+}
+
+#Sign-up input[type="text"], input[type="email"],input[type="phone"],input[type="accsoft"],input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid rgba(11, 11, 11, 0.989);
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: rgb(7, 7, 7);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+/* #Sign-up input[placeholder="Enter Your full Name"],[placeholder="Enter Email ID"],[placeholder="Enter Your Number"],[placeholder="Enter Accsoft ID"],[placeholder="Enter Password"],[placeholder="Enter Comfirm Password"]
+{
+    background: rgba(58, 18, 72, 0.651);
+    color: rgb(1, 1, 1);
+} */
+
+.login-box input[type="submit"]{
+    transform: translate(0%,70%);
+}
+
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    background: #5b08e0;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+
+/* Sign-in section */
+#Sign-in h4{
+    color: rgb(80, 7, 87);
+    transform: translate(0%,50%);
+}
+
+#Sign-in{ 
+    content: "";
+    /* position: relative; */
+    /* z-index: -1; */
+    /* opacity:0.89; */
+    background: url('asd.jpg') no-repeat center center/cover;
+    height: 450px;
+    width: 100%;
+   
+   
+}
+
+
+#Sign-in button
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #5b08e0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transform: translate(0%,150%);
+}
+#Sign-in button:hover
+{
+    cursor: pointer;
+    background: #67d163;
+    color: #000;
+}
+
+
+#Sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Contact Section */
+#contact h1{
+    color: rgb(80, 7, 87);
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('cons.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    background: #f2f1f590;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+#contact-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 528px;
+    background: #3c4042;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 30px;
+}
+#contact-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #184a86;
+    color: #000;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
